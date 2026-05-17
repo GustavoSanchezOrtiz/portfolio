@@ -66,3 +66,22 @@ function updateContent() {
 updateContent();
 
 setInterval(updateContent, 3000);
+
+// =========================
+// SCROLL INDICATOR
+// =========================
+
+const scrollIndicator =
+  document.getElementById("scroll-indicator");
+
+window.addEventListener("scroll", () => {
+
+  if (window.scrollY > 50) {
+
+    scrollIndicator.classList.add("hide");
+
+  } else {
+
+    scrollIndicator.classList.remove("hide");
+  }
+});

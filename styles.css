@@ -452,3 +452,80 @@ body {
 
   letter-spacing: 0.5px;
 }
+
+/* =========================
+   SCROLL INDICATOR
+========================= */
+
+.scroll-indicator {
+
+  position: absolute;
+
+  right: 40px;
+  bottom: 40px;
+
+  color: #6f6f6f;
+
+  font-size: 1rem;
+
+  opacity: 0;
+
+  animation: fadeIn 1s ease forwards;
+
+  animation-delay: 1.7s;
+
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease;
+}
+
+
+/* SOLO el icono flota */
+
+.scroll-indicator i {
+
+  display: block;
+
+  animation:
+    floatArrow 2s ease-in-out infinite;
+}
+
+
+/* flotación */
+
+@keyframes floatArrow {
+
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(5px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+/* aparición */
+
+@keyframes fadeIn {
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* ocultar */
+
+.scroll-indicator.hide {
+
+  opacity: 0;
+
+  transform: translateY(10px);
+
+  pointer-events: none;
+}
