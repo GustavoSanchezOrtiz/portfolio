@@ -311,6 +311,25 @@ body {
   max-width: 700px;
 }
 
+.project h3 a {
+
+  color: white;
+
+  text-decoration: none;
+
+  transition: opacity 0.3s ease;
+}
+
+.project h3 a:visited {
+
+  color: white;
+}
+
+.project h3 a:hover {
+
+  opacity: 0.7;
+}
+
 /* =========================
    TECNOLOGÍAS
 ========================= */
