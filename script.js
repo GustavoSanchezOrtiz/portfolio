@@ -26,7 +26,7 @@ setTimeout(() => {
 
 
 const words = [
-  "Frontend",
+  "Full stack developer",
   "Experiencias digitales",
   "Branding digital"
 ];

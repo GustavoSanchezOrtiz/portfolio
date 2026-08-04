@@ -293,7 +293,7 @@ body {
 
 .project h3 {
 
-  margin: 0;
+  margin: 0 0 0 -8px;
 
   font-size: 1.3rem;
 
@@ -330,6 +330,28 @@ body {
   opacity: 0.7;
 }
 
+.project h3 a[target="_blank"]::after,
+.project-links a[target="_blank"]::after {
+
+  content: "\f08e";
+
+  margin-left: 8px;
+
+  font-family: "Font Awesome 6 Free";
+  font-size: 0.75em;
+  font-weight: 900;
+}
+
+.project h4 {
+
+  margin: 28px 0 0 -8px;
+
+  color: white;
+
+  font-size: 1rem;
+  font-weight: 500;
+}
+
 /* =========================
    TECNOLOGÍAS
 ========================= */
@@ -346,7 +368,8 @@ body {
 }
 
 
-.tech-stack span {
+.tech-stack span,
+.tech-stack a {
 
   padding: 12px 20px;
 
@@ -360,6 +383,8 @@ body {
 
   font-size: 0.95rem;
 
+  text-decoration: none;
+
   transition:
     border-color 0.3s ease,
     transform 0.3s ease,
@@ -367,13 +392,63 @@ body {
 }
 
 
-.tech-stack span:hover {
+.tech-stack span:hover,
+.tech-stack a:hover {
 
   border-color: #3a3a3a;
 
   color: white;
 
   transform: translateY(-2px);
+}
+
+.project-links {
+
+  margin-top: 24px;
+}
+
+.architecture-card {
+
+  margin-top: 30px;
+
+  padding: 24px;
+
+  border: 1px solid #1f1f1f;
+
+  border-radius: 8px;
+
+  background: #0f0f0f;
+
+  max-width: 420px;
+}
+
+.architecture-card h4 {
+
+  margin: 0;
+}
+
+.architecture-flow {
+
+  margin: 20px 0 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.architecture-flow li {
+
+  color: #d1d1d1;
+
+  line-height: 1.8;
+}
+
+.architecture-flow li + li::before {
+
+  content: "↓";
+
+  display: block;
+
+  color: #6f6f6f;
 }
 
 
