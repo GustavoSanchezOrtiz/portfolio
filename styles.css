@@ -391,6 +391,11 @@ body {
     color 0.3s ease;
 }
 
+.tech-stack a:visited {
+
+  color: #d1d1d1;
+}
+
 
 .tech-stack span:hover,
 .tech-stack a:hover {
